@@ -29,4 +29,16 @@ public class MoodAnalyser {
             return "null";
         }
     }
+
+    protected static String analyzeMood3(String message) {
+        try {
+            if (message.contains("sad")){
+                return "SAD";
+            }
+        }
+        catch (NullPointerException e){
+            return "Happy";
+        }
+        return "null";
+    }
 }

@@ -22,4 +22,11 @@ public class MoodAnalyserTest extends MoodAnalyser{
         assertEquals("HAPPY",result);
     }
 
+    @Test
+    void givenMessage_whenInvalid_shouldReturnNull(){
+        String result = MoodAnalyser.analyzeMood3("null");
+        assertEquals("null",result);
+        System.out.println(result);
+    }
+
 }
