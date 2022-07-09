@@ -19,4 +19,14 @@ public class MoodAnalyser {
             return "null";
         }
     }
+
+    protected static String analyzeMood2(String message) {
+        if (message.contains("sad")) {
+            return "SAD";
+        } else if (message.contains("I am in Happy mood")) {
+            return "HAPPY";
+        } else {
+            return "null";
+        }
+    }
 }

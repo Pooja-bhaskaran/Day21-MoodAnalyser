@@ -16,4 +16,10 @@ public class MoodAnalyserTest extends MoodAnalyser{
         assertEquals("SAD",result);
     }
 
+    @Test
+    void givenMessage_whenIamInHappyMood_shouldReturnHappy(){
+        String result = MoodAnalyser.analyzeMood2("I am in Happy mood");
+        assertEquals("HAPPY",result);
+    }
+
 }
